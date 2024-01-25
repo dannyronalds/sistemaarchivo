@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+}
+
+.menu-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../../img/banner1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    height: 70px; /* Altura del header */
+    position: relative;
+    z-index: 1;
+}
+
+.menu-head .logo-head {
+    width: 40px; /* Tamaño del logo */
+    height: 50px; /* Tamaño del logo */
+  
+    overflow: hidden; /* Ocultar cualquier contenido fuera del borde */
+}
+
+.menu-head .logo-head img {
+    width: 100%; /* Ajustar al tamaño del contenedor */
+    height: 100%; /* Ajustar al tamaño del contenedor */
+}
+
+.message-head {
+    font-family: 'YourChosenFont', sans-serif;
+    font-size: 2em; /* Tamaño de la fuente */
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+ul {
+    list-style: none; /* Quita los marcadores de lista (viñetas) */
+}
+
+ul li {
+    display: inline-block;
+    padding: 5px; /* Ajusta el espacio alrededor de los elementos de la lista */
+}
+
+ul li a {
+    font-family: 'YourChosenFont', sans-serif;
+    font-size: 1.5em; /* Tamaño de la fuente para los enlaces */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px; /* Añade un padding para que se vea como un botón */
+    border: 2px solid transparent; /* Añade un borde transparente para resaltar al pasar el ratón */
+    transition: border 0.3s ease, color 0.3s ease; /* Agrega una transición para suavizar el efecto de cambio de borde y color */
+    color: white; /* Color de las letras */
+}
+
+ul li a:hover {
+    color: white; /* Cambia el color al pasar el ratón */
+    border-color: white; /* Cambia el color del borde al pasar el ratón */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mostrar las opciones cuando se pasa el cursor sobre el elemento li */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,35 @@
+body {
+    background: url('../../img/diadederecho.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para el contenedor principal */
+    border-radius: 8px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-top: 50px;
+}
+
+.form-select {
+    width: 100px; /* Ancho del select para mostrar registros */
+}
+
+.form-control {
+    width: 200px; /* Ancho del campo de búsqueda */
+}
+
+.table {
+    background-color: #f0eaea; /* Color de fondo de la tabla */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 100%; /* Ancho máximo del 100% para ocupar el contenedor */
+}
+
+th {
+    background-color: #007BFF; /* Color de fondo del encabezado de la tabla */
+    color: #000; /* Color del texto del encabezado */
+}
+
+.table td, .table th {
+    text-align: center; /* Alinear el contenido al centro */
+}

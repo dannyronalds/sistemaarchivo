@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "name": "chatbot-archivo",
+  "version": "1.0.0",
+  "main": "chat-gpt-embebido.js",
+  "dependencies": {
+    "chart.js": "^4.4.1",
+    "openai": "^4.25.0"
+  }
+}

@@ -1,0 +1,117 @@
+#options {
+  display: none;
+}
+
+#btnBuscar {
+  background-color: #4caf50;
+  /* Color verde, puedes cambiarlo según tus preferencias */
+  color: white;
+  font-family: "Arial", sans-serif;
+  /* Cambiar a la fuente deseada */
+  font-size: 18px;
+  /* Tamaño de la fuente, ajusta según sea necesario */
+}
+
+#btnBuscar {
+  /* ... (otras reglas) ... */
+  transition: background-color 0.3s, color 0.3s;
+  /* Agrega transición para el color de fondo y texto */
+}
+
+#btnBuscar:hover {
+  background-color: #45a049;
+  /* Cambia el color al pasar el ratón por encima */
+  color: #fff;
+  /* Cambia el color del texto al pasar el ratón por encima */
+}
+
+#search-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Color blanco con opacidad del 80% */
+  padding: 10px;
+  /* Ajusta según sea necesario */
+  border-radius: 10px;
+  /* Ajusta según sea necesario */
+}
+
+/* Estilo para el botón "Guardar" */
+.button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 20px 30px;
+  font-size: 16px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  background-size: 200% 200%;
+  border-radius: 5px;
+  z-index: -1;
+  animation: glowing 3s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.button:hover {
+  background: none;
+  color: #000;
+}
+
+.cuerpo-body{
+    font-family: Arial, sans-serif;
+    background: url('../../img/paisaje.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+.header-buscador{
+    background: url('../../img/paisaje.jpg') no-repeat center center; 
+    background-size: cover;
+}
+.contenedor-buscar{
+    display: inline-block; 
+    width: 60%;
+}
+.entrada-buscar{
+    width: 80%; 
+    padding: 10px; 
+    margin-right: 10px;
+}
+.boton-buscar{
+    padding: 10px;
+}
+.container {
+    display: flex;
+    font: sans-serif;
+    flex-direction: row;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+.boton-buscar{
+    margin: 0 auto;
+}
